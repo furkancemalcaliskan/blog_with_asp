@@ -1,0 +1,477 @@
+*{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #20020c;
+    position: relative;
+}
+
+h1{
+    font-size:32px;
+    color:#fff;
+    margin-bottom:35px;
+}
+
+.container{
+    width:600px;
+    margin:0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: #ffd1dc;
+    display: block;
+}
+
+header{
+    width: 100%;
+    background-color: #681630;
+    margin-bottom:35px;
+    height: 53.2px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+}
+
+header ul li{
+    font-size:18px;
+    color: #fff;
+    font-weight: 500;
+    transition:0.3s all ease-in-out;
+}
+
+header ul li a{
+    
+    padding:15px 20px;
+}
+
+header ul li:hover{
+    background-color: #D20000;
+    color:#fff;
+}
+
+header ul li:first-child:hover{
+    background-color:transparent;
+    color:#fff;
+}
+
+header ul li:first-child a:first-child{
+    margin-right:15px;
+    padding:0;
+    height: 53.2px;
+}
+
+header ul li a img{
+    margin-top:1.5px;
+    width:120px;
+    height: 50px;
+}
+
+@media (max-width){
+    
+}
+
+main{
+    display: flex;
+    
+    border-radius: 5px;
+}
+
+.main-left{
+    display:flex;
+    flex:3;
+    flex-direction: column;
+}
+
+.main-right{
+    flex:2;
+}
+
+.main-left h4{
+    font-size:25px;
+    margin-bottom:15px;
+    color:#fff;
+    
+}
+
+.main-left p{
+    font-weight:500;
+    margin-bottom:15px;
+    color: #ffd1dc;
+    font-size:15px;
+}
+
+.main-left img{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+
+form{
+    display: inline-flex;
+    flex-direction: column;
+    
+}
+
+form h3{
+    color:#fff;
+    margin-bottom:15px;
+}
+
+
+
+input{
+    width:300px;
+    border-radius: 5px;
+    outline:none;
+    border:2px solid #eee;
+    margin-bottom:15px;
+    padding:10px;
+    font-weight: 500;
+    font-size:15px;
+
+}
+
+.inputs form input:nth-child(2n){
+    margin-bottom:20px;
+}
+
+button{
+    width:100px;
+    padding:10px 10px;
+    background-color: #ffd1dc;
+    border-radius:5px;
+    border:none;
+    color:#150019;
+    font-weight:500 ;
+    cursor: pointer;
+    font-size:16px;
+
+}
+
+.loginButton{
+    margin-left:auto;
+    display: block;
+}
+
+
+
+form span{
+    margin-bottom:8px;
+    color:#fff;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    padding:20px;
+    border-radius: 5px;
+    transition:0.3s all ease-in-out;
+    background-color: #3e0748;
+    margin-bottom:35px;
+    
+}
+
+select{
+    width:300px;
+    height:43px ;
+    border-radius: 5px;
+    margin-bottom:15px;
+    outline:none;
+    padding: 5px;
+    font-size:15px;
+    
+}
+
+.inputs:hover{
+    transform:translate(10px,-10px);
+    box-shadow: -10px 10px 0px 0 #150019;
+}
+
+.card{
+    padding:40px;
+    border-radius: 5px;
+    background-color: #681630;
+    margin-bottom:35px;
+}
+
+.card .user-info{
+    display: flex;
+}
+
+.card .user-info .user-img img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position:top;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+
+.card .user-info .user-text{
+    color:#fff;
+    font-size:18px;
+    
+}
+
+.card .user-info .user-text span{
+    margin-bottom:5px;
+    display: block;
+}
+
+.card .user-info .user-text p{
+    width: 100%;
+    display: block;
+}
+
+.card form{
+    display: flex;
+}
+
+.card form div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.card form div span{
+    display: inline-block;
+}
+
+.identity{
+    display: flex;
+    justify-self:flex;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex-fd-c{
+    flex-direction: column;
+}
+
+.flex-jc-c{
+    justify-content: center;
+}
+
+.identity{
+    width:100%;
+}
+
+
+
+
+
+footer{
+    background-color: #681630;
+    padding:20px;
+    position: relative;
+    margin-top: 35px;
+}
+
+footer p{
+    color:#fff;
+    text-align: center;
+
+}
+
+
+.hamburger{
+    display: none !important;
+}
+
+.responsive-menu{
+    display: none;
+}
+
+.chcbox{
+    display: block !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.chcbox input{
+    width: auto;
+    margin-right:10px;
+}
+
+.chcbox span{
+    width: auto;
+}
+
+
+@media (min-width:640px) and (max-width:1039px){
+    .main-right{
+        display: none;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .container{
+        width:675px;
+        padding:0 20px;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hamburger{
+        display:flex !important;
+        color:#fff;
+        font-size:26px;
+        cursor: pointer;
+    }
+
+    .responsive-menu{
+        display: none;
+        position:absolute;
+        background-color: #D20000;
+        color:#fff;
+        transform: translateX(-50%);
+        width: 100%;
+        left:50%;
+        top:53.2px;
+    }
+    
+    .responsive-menu ul{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+    }
+    
+    .responsive-menu ul li a{
+        padding:15px 30px;
+        font-weight: 500;
+        font-size:18px;
+        
+    }
+
+    .responsive-menu ul li {
+        width: 100%;
+        text-align: center;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .responsive-menu ul li:hover{
+        background-color: #002497;
+    }
+    
+    .responsive-menu.show{
+        display: block !important;
+    }
+    
+}
+
+
+@media (min-width:150px) and (max-width:639px){
+    .main-right{
+        display: none;
+    }
+
+    .card{
+        width: 100%;
+        padding:20px;
+    }
+
+    .container{
+        width:400px;
+    }
+
+    .card form div{
+        flex-direction: column;
+    }
+
+    .card form div input{
+        width: 100%;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 53.2px;
+    }
+
+    .hamburger{
+        display:flex !important ;
+        color:#fff;
+        font-size:26px;
+        cursor: pointer;
+    }
+
+    .responsive-menu{
+        display: none;
+        position:absolute;
+        background-color: #D20000;
+        color:#fff;
+        transform: translateX(-50%);
+        width: 100%;
+        left:50%;
+        top:53.2px;
+    }
+    
+    .responsive-menu ul{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+    }
+    
+    .responsive-menu ul li a{
+        padding:15px 30px;
+        font-weight: 500;
+        font-size:18px;
+        
+    }
+
+    .responsive-menu ul li {
+        width: 100%;
+        text-align: center;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .responsive-menu ul li:hover{
+        background-color: #002497;
+    }
+    
+    .responsive-menu.show{
+        display: block !important;
+    }
+
+    select{
+        width: 100%;
+    }
+}
+
+@media (max-width:1039px){
+    header ul{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
