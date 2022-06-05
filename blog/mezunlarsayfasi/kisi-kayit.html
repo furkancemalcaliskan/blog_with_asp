@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt</title>
+    <link rel="stylesheet" href="../pages-style/kisi-kayit.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/06e87590aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p><a href="kisi-kayitEN.html">EN</a></p>
+    <header>
+        <i class="fas fa-bars hamburger" id="hamburgerBtn"></i>
+
+        <ul>
+            <li><a href="default.asp"><img src="img/image0.jpg" alt=""></a></li>
+            <li><a href="forum.asp">Forum</a></li>
+            <li><a href="kisiler.asp">Kişiler</a></li>
+            <li><a href="photos.asp">Fotoğraflar</a></li>
+            <li><a href="videos.asp">Videolar</a></li>
+            <li><a href="kimNerede.asp">Kim, Nerede, Ne yapıyor?</a></li>
+            <li><a href="harita.asp">Harita</a></li>
+            <li><a href="oturum.asp">Oturum Aç</a></li>
+            <li><a href="kisi-kayit.html">Kayıt</a></li>
+            <li><script type="text/javascript">saatkacTT_iDate=1;saatkacTT_country="TR";saatkacTT_region="";saatkacTT_fontColor="##ffd1dc";saatkacTT_fontType="bold 17px sans-serif";</script><script type="text/javascript" src="http://www.saatkac.com/dateTimeText.js"></script></li>
+        </ul>
+    </header>
+
+    <nav class="responsive-menu" id="resMenu">
+        <ul>
+            <li><a href="default.asp">Anasayfa</a></li>
+            <li><a href="forum.asp">Forum</a></li>
+            <li><a href="kisiler.asp">Kişiler</a></li>
+            <li><a href="photos.asp">Fotoğraflar</a></li>
+            <li><a href="videos.asp">Videolar</a></li>
+            <li><a href="kimNerede.asp">Kim, Nerede, Ne yapıyor?</a></li>
+            <li><a href="harita.asp">Harita</a></li>
+            <li><a href="oturum.asp">Oturum Aç</a></li>
+            <li><a href="kisi-kayit.html">Kayıt</a></li>
+        </ul>
+    </nav>
+    
+        <main class="container flex flex-jc-c">
+            
+
+            <section class="container main-left">
+
+                <h1>Kaydol</h1>
+                
+                <div class="card">
+
+                    <form method="POST" name=form action="VeriGirisiOK.asp">
+                        <div class="name">
+                            <span>Adınız</span>
+                            <input name="isim" type="text" placeholder="Adınızı giriniz">
+                        </div>
+
+                        <div class="surname">
+                            <span>Soyadınız </span>
+                            <input name="soyisim" type="text" placeholder="Soyadınızı giriniz">
+                        </div>
+    
+                        <div class="job">
+                            <span>Cinsiyetiniz </span>
+                            <select name="cinsiyet">
+                                <option value="">Cinsiyetinizi seçiniz..</option>
+                                <option value="Kadin">Kadın</option>
+                                <option value="Erkek">Erkek</option>
+                            </select>
+                        </div>
+
+                        <div class="job">
+                            <span>Meslek </span>
+                            <input name="meslegi" type="text" placeholder="Görevinizi giriniz">
+                        </div>
+
+                        <div class="city">
+                            <span>Yaşadığınız şehir </span>
+                            <input name="sehriniz" type="text" placeholder="Yaşadığınız şehri giriniz">
+                        </div>
+
+                        <div class="scno">
+                            <span>E-postanız veya Kullanıcı Adınız</span>
+                            <input name="eposta" type="text" placeholder="E-postanızı giriniz">
+                        </div>
+
+                        <div class="scholl-name">
+                            <span>Şifreniz </span>
+                            <input name="password" type="password" placeholder="Şifrenizi giriniz">
+                        </div>
+
+                   
+
+                        <div class="identity">
+                            
+                            <button type="submit" class="loginButton">Kaydol</button>
+                        </div>
+
+                        
+                        
+                    </form>
+
+                    
+
+                </div>
+
+            </section>
+
+            
+        </main>
+    
+
+        <footer class="">
+            <p>dejkoveci  &nbsp; | &nbsp; Tüm Hakları Saklıdır.</p>
+        </footer>
+
+        <script src="../script.js"></script>
+</body>
+</html>
